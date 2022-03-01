@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Design by foolishdeveloper.com -->
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Re-Enhance.ai</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+ <style>
+   
+   body {
+  margin:0px;
+  height:100vh;
+  background: #7f59da;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  color: #7f59da;
+  text-decoration: solid;
+  text-align: center;
+  margin-top: 20px;
+}
+.center {
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 5px;
+
+}
+.form-input {
+  width: 400px;;
+  padding:20px;
+  background:#fff;
+  border-radius:5px;
+  box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+              3px 3px 7px rgba(94, 104, 121, 0.377);
+}
+.form-input input {
+  display:none;
+
+}
+
+
+
+.form-input .submit{
+  display: inline-block;
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+  color: #f5f4f8;
+  border-radius: 7px;
+  border: none;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  -webkit-animation: anime 6s linear infinite;
+  -moz-animation: anime 6s linear infinite;
+  animation: anime 6s linear infinite;
+  @-webkit-keyframes anime {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes anime {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+}
+
+a {
+  color: #f9f7fc;
+  text-decoration: none;
+}
+input {
+  text-align: center;
+  color:#fff;
+
+}
+::placeholder {
+  color: rgb(254, 255, 254);
+  opacity: 0.7;
+}
+
+.force-opaque::placeholder {
+  opacity: 1;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+  color:#fff;
+}
+
+:-moz-placeholder {
+  text-align: center;
+  color:#fff;
+
+}
+
+
+   
+  </style>
+
+</head>
+<body>
+ <div class="center">
+  <form class="form-input" method="POST" action="/" enctype="multipart/form-data" onsubmit="submit();">
+    <p>
+      <strong>We are working on your image. Will sent you the image in your Email ASAP.</strong>
+    </p>
+    <br>
+    <center><a href="index.html">
+    <input type="submit" class="submit" value="ok" />
+  </a></center>
+</form>
+  </div>
+
+</div>
+</body>
+</html>
