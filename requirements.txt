@@ -1,5 +1,3 @@
--f https://download.pytorch.org/whl/torch_stable.html
-torch==1.10.2+cpu
 absl-py==1.0.0
 addict==2.4.0
 cachetools==5.0.0
@@ -26,13 +24,10 @@ lmdb==1.3.0
 Markdown==3.3.6
 MarkupSafe==2.1.0
 matplotlib==3.5.1
-networkx==2.7
-numba==0.55.1
-numpy==1.21.5
 oauthlib==3.2.0
+opencv-python==4.5.5.62
 opencv-python-headless==4.5.5.62
 packaging==21.3
-Pillow==9.0.1
 protobuf==3.19.4
 ptyprocess==0.7.0
 pyasn1==0.4.8
@@ -47,8 +42,11 @@ rsa==4.8
 scikit-image==0.19.2
 scipy==1.8.0
 six==1.16.0
+torchvision==0.11.3
 tornado==6.1
 tqdm==4.62.3
 typing_extensions==4.1.1
 urllib3==1.26.8
 Werkzeug==2.0.3
+yapf==0.32.0
+zipp==3.7.0
