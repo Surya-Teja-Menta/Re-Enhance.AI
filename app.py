@@ -17,10 +17,9 @@ pip.main(['install', 'gfpgan==1.3.2'])
 
 
 
-application=Flask(__name__)
-app=application
+app=Flask(__name__)
 
-@application.route('/', methods=['GET','POST'])
+@app.route('/', methods=['GET','POST'])
 def index():
     # for i in os.listdir('inputs'):
     #     os.remove(os.path.join('inputs', i))
@@ -34,7 +33,7 @@ def index():
     print("index Loaded")
     return render_template('index.html')
 
-@application.route('/submit', methods=['GET', 'POST'])
+@app.route('/submit', methods=['GET', 'POST'])
 def submit():
     if request.method == 'POST':
         f = request.files['file-ip-1']
