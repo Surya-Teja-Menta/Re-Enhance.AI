@@ -14,6 +14,7 @@ from werkzeug.utils import secure_filename
 
 
 application=Flask(__name__)
+app=application
 
 @application.route('/', methods=['GET','POST'])
 def index():
@@ -65,4 +66,4 @@ def runn(file_path,email,user_root):
 
 
 if __name__ == '__main__':
-    application.run(host='0.0.0.0',debug=False,threaded=True)
+    app.run(host='0.0.0.0',debug=False,threaded=True)
