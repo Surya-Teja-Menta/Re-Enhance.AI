@@ -37,6 +37,5 @@ jobs:
            
       if: github.ref == 'refs/heads/main' && job.status == 'success'
       run: |
-        pip3 install torch==1.10.2+cpu torchvision==0.11.3+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
         git remote add heroku https://heroku:$HEROKU_API_TOKEN@git.heroku.com/$HEROKU_APP_NAME.git
         git push heroku HEAD:main -f
