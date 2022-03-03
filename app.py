@@ -11,6 +11,9 @@ from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 import pip
 pip.main(['install', 'basicsr==1.3.4.9'])
+pip.main(['install', 'facexlib==0.2.2'])
+pip.main(['install', 'gfpgan==1.3.2'])
+
 
 
 
