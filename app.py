@@ -5,7 +5,6 @@ pip.main(['install', 'basicsr==1.3.4.9'])
 pip.main(['install', 'facexlib==0.2.2'])
 pip.main(['install', 'gfpgan==1.3.2'])
 import os,cv2,uuid,threading
-from PIL import Image
 import numpy as np
 from gan import *
 from splits import Splits
@@ -22,15 +21,6 @@ app=Flask(__name__)
 
 @app.route('/', methods=['GET','POST'])
 def index():
-    # for i in os.listdir('inputs'):
-    #     os.remove(os.path.join('inputs', i))
-    # for i in os.listdir('results'):
-    #     os.remove(os.path.join('results', i))
-    # for i in os.listdir('outputs'):
-    #     os.remove(os.path.join('outputs', i))
-    # for i in os.listdir('web'):
-    #     os.remove(os.path.join('web', i))
-    # print('Paths cleared')
     print("index Loaded")
     return render_template('index.html')
 

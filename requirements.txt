@@ -1,6 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.10.2+cpu
-opencv-python-headless==4.5.5.62
 absl-py==1.0.0
 addict==2.4.0
 cachetools==5.0.0
@@ -31,7 +30,6 @@ networkx==2.7
 numba==0.55.1
 numpy==1.21.5
 oauthlib==3.2.0
-opencv-python==4.5.5.62
 opencv-python-headless==4.5.5.62
 packaging==21.3
 Pillow==9.0.1
@@ -49,15 +47,8 @@ rsa==4.8
 scikit-image==0.19.2
 scipy==1.8.0
 six==1.16.0
-tb-nightly==2.9.0a20220303
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.1
-terminado==0.13.1
-tifffile==2022.2.9
 tornado==6.1
 tqdm==4.62.3
 typing_extensions==4.1.1
 urllib3==1.26.8
 Werkzeug==2.0.3
-yapf==0.32.0
-zipp==3.7.0
