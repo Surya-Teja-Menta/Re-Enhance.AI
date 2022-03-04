@@ -48,7 +48,7 @@ class gan:
                 tile=0,
                 tile_pad=10,
                 pre_pad=0,
-                half=args.half)
+                )
 
             os.makedirs(f'outputs', exist_ok=True)
             os.makedirs(f'outputs/{user_root}', exist_ok=True)
@@ -70,7 +70,7 @@ class gan:
                     img_mode = None
 
                 try:
-                    output, _ = upsampler.enhance(img, outscale=args.outscale)
+                    output, _ = upsampler.enhance(img, outscale=4)
 
                 except RuntimeError as error:
                     print('Error', error)
