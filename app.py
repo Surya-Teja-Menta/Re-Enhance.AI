@@ -1,9 +1,5 @@
 from __future__ import division, print_function
 # coding=utf-8
-import pip
-pip.main(['install', 'basicsr==1.3.4.9'])
-pip.main(['install', 'facexlib==0.2.2'])
-pip.main(['install', 'gfpgan==1.3.2'])
 import os,cv2,uuid,threading
 import numpy as np
 from gan import *
