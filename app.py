@@ -29,7 +29,7 @@ def submit():
         user_root=f'{email}_{uuid.uuid4()}'
         print(user_root)
         basepath = os.path.dirname(__file__)
-        print(basepath)
+        print('basepath:',basepath)
         os.mkdir(os.path.join(basepath, 'web', user_root))
         file_path = os.path.join(basepath, 'web',user_root, secure_filename(f.filename))
         print(file_path)
