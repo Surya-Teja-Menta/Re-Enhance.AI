@@ -28,10 +28,9 @@ def submit():
         print(email)
         user_root=f'{email}_{uuid.uuid4()}'
         print(user_root)
-        basepath = os.path.dirname(__file__)
-        print('basepath:',basepath)
-        os.mkdir(os.path.join(basepath, 'web', user_root))
-        file_path = os.path.join(basepath, 'web',user_root, secure_filename(f.filename))
+        os.makedirs('web',exist_ok=True)
+        os.mkdir(os.path.join('web', user_root))
+        file_path = os.path.join('web',user_root, secure_filename(f.filename))
         print(file_path)
         f.save(file_path)
         t=threading.Thread(target=runn,args=(file_path,email,user_root)).start()
