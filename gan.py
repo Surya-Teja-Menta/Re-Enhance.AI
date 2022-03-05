@@ -11,11 +11,8 @@ class gan:
         
     def main(user_root):
         try:
-            """Inference demo for Real-ESRGAN.
-            """
             
 
-            # determine models according to model names
             
             model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=4)
             netscale = 4
