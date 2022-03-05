@@ -9,14 +9,14 @@ from deliver import Deliver
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 
-app=Flask(__name__)
+application=Flask(__name__)
 
-@app.route('/', methods=['GET','POST'])
+@application.route('/', methods=['GET','POST'])
 def index():
     print("index Loaded")
     return render_template('index.html')
 
-@app.route('/submit', methods=['GET', 'POST'])
+@application.route('/submit', methods=['GET', 'POST'])
 def submit():
     if request.method == 'POST':
         f = request.files['file-ip-1']
@@ -52,4 +52,4 @@ def runn(file_path,email,user_root):
 
 
 if __name__ == '__main__':
-    app.run(debug=False,threaded=True)
+    application.run(debug=False,threaded=True)
