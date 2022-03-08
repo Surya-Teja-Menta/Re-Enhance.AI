@@ -27,7 +27,7 @@ class gan:
                 scale=netscale,
                 model_path=model_path,
                 model=model,
-                tile=516,
+                tile=256+128,
                 tile_pad=10,
                 pre_pad=0,
                 )
