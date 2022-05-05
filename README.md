@@ -34,7 +34,7 @@ The tools are designed to be used in a concurrent multi-threaded environment.we 
 ---
 Test Image | Enhanced Image 
 :----------:|:-------------:
-<img src="test_image.jpeg" width="400" height="790"> | <img src="Enhanced_image.jpeg" width="400" height="790">  
+<img src="test_image.jpeg" width="400" height="600"> | <img src="Enhanced_image.jpeg" width="400" height="600">  
 
 Observe the details in the Generated Enhanced Image. The enhanced image is a super resolution image.
 
