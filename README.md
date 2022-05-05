@@ -34,7 +34,7 @@ The tools are designed to be used in a concurrent multi-threaded environment.we 
 ---
 | Test Image | Enhanced Image |
 | ---------- | ------------- |
-| ![](test_image.png) | ![](enhanced_image.png) |
+| ![test](test_image.png) | ![generated](enhanced_image.png) |
 
 Observe the details in the Generated Enhanced Image. The enhanced image is a super resolution image.
 
