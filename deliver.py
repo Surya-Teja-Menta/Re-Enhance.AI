@@ -27,7 +27,7 @@ class Deliver:
             msg.attach(p)
             s=smtplib.SMTP('smtp.gmail.com',587)
             s.starttls()
-            s.login(sender,'Surya@123')
+            s.login(sender,'**********')
             text=msg.as_string()
             s.sendmail(sender,receiver,text)
             s.quit()
