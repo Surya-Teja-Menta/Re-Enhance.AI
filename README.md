@@ -30,11 +30,36 @@ The tools are designed to be used in a concurrent multi-threaded environment.we 
     python application.py
     ```
 
+## Usage
+---
+1. Go to the link/localhost.<br>
+<center><img src="images/1.png" width="650"></center>
+
+2. Select the image you want to enhance and enter your mail.<br>
+<center><img src="images/2.png" width="650"></center>
+
+3. Click on the button "Submit". You will get the prompt that we are working (Its really working in backend).<br>
+<center><img src="images/3.png" width="650"></center>
+
+4. You will get the image with the enhanced quality via mail.<br>
+<center><img src="images/4.png" width="650"></center>
+
+
+
 ## Outputs
 ---
 Test Image | Enhanced Image 
 :----------:|:-------------:
-<img src="test_image.jpeg" width="400" height="550"> | <img src="Enhanced_image.jpeg" width="400" height="550">  
+<img src="images/test_image.jpeg" width="400" height="550"> | <img src="images/Enhanced_image.jpeg" width="400" height="550">  
 
 Observe the details in the Generated Enhanced Image. The enhanced image is a super resolution image.
 
+|Properties |  Test Image | Enhanced Image
+:----------:|:----------:|:-------------:
+Resolution |  528x474x3 | 2112x1896x3
+Size |  32KB | 732KB
+
+The Enhanced Image is a super resolution image. it will be a lot better than the test image. it will sent to your mail via Re-Enhance.AI. We can send this image to the generater again and again, for every time we will get a better image than previous one.
+
+
+Note: This App is unable to deply in host due to the cost because it consumes more CPU/GPU depending on the image size.
