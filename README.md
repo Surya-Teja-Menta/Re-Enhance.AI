@@ -32,9 +32,9 @@ The tools are designed to be used in a concurrent multi-threaded environment.we 
 
 ## Outputs
 ---
-| Test Image | Enhanced Image |
-| ---------- | ------------- |
-| ![test](test_image.png) | ![generated](enhanced_image.png) |
+Test Image | Enhanced Image 
+:----------:|:-------------:
+![test](test_image.jpeg) | ![generated](Enhanced_image.jpeg) 
 
 Observe the details in the Generated Enhanced Image. The enhanced image is a super resolution image.
 
