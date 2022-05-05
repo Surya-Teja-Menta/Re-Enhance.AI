@@ -63,4 +63,5 @@ Size |  32KB | 732KB
 The Enhanced Image is a super resolution image. it will be a lot better than the test image. it will sent to your mail via Re-Enhance.AI. We can send this image to the generater again and again, for every time we will get a better image than previous one.
 
 
-Note: This App is unable to deply in host due to the cost because it consumes more CPU/GPU depending on the image size.
+### Note:
+- Please enable Allow Less Secure Apps in your Gmail account which is used to send images. 
