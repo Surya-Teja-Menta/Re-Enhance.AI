@@ -22,6 +22,7 @@ The tools are designed to be used in a concurrent multi-threaded environment.we 
     ```
     ```bash
     #if you don't have GPU
+    pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
     pip install -r requirements.txt
     ```
 3. Run the code
