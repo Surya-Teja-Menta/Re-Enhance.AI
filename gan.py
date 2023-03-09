@@ -9,7 +9,7 @@ from realesrgan.archs.srvgg_arch import SRVGGNetCompact
 
 class gan:
         
-    def main(user_root):
+    def main(user_root='test'):
         try:
             
 

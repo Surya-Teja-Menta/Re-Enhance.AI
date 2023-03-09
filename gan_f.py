@@ -9,7 +9,7 @@ from realesrgan.archs.srvgg_arch import SRVGGNetCompact
 
 class gan:
         
-    def main(user_root):
+    def main(user_root='test'):
         try:
             """Inference demo for Real-ESRGAN.
             """
@@ -50,13 +50,13 @@ class gan:
                 pre_pad=0,
                 half=args.half)
 
-            from gfpgan import GFPGANer
-            face_enhancer = GFPGANer(
-                model_path='https://github.com/TencentARC/GFPGAN/releases/download/v0.2.0/GFPGANCleanv1-NoCE-C2.pth',
-                upscale=4,
-                arch='clean',
-                channel_multiplier=2,
-                bg_upsampler=upsampler)
+            # from gfpgan import GFPGANer
+            # face_enhancer = GFPGANer(
+            #     model_path='https://github.com/TencentARC/GFPGAN/releases/download/v0.2.0/GFPGANCleanv1-NoCE-C2.pth',
+            #     upscale=4,
+            #     arch='clean',
+            #     channel_multiplier=2,
+            #     bg_upsampler=upsampler)
             os.makedirs(f'outputs', exist_ok=True)
             os.makedirs(f'outputs/{user_root}', exist_ok=True)
 
@@ -77,7 +77,8 @@ class gan:
                     img_mode = None
 
                 try:
-                    _, _, output = face_enhancer.enhance(img, has_aligned=False, only_center_face=False, paste_back=True)
+                    output, _ = upsampler.enhance(img, outscale=4)
+                    # _, _, output = face_enhancer.enhance(img, has_aligned=False, only_center_face=False, paste_back=True)
                 except RuntimeError as error:
                     print('Error', error)
                     print('If you encounter CUDA out of memory, try to set --tile with a smaller number.')

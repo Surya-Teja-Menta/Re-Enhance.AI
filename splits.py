@@ -6,9 +6,10 @@ class Splits:
     def __init__(self,size=516):
         self.size = size
 
-    def get_tokens(self,image_path,user_root):
+    def get_tokens(self,image_path,user_root='test'):
 
         try:
+            print(image_path)
             ext=image_path.split('.')[-1]
             #dir='inputs/'
             # for i in os.listdir(dir):
@@ -35,7 +36,7 @@ class Splits:
         except Exception as e:
             print(e)
 
-    def get_image(self,path, w,ext,user_root):
+    def get_image(self,path, w,ext,user_root='test'):
         try:
             stack=[]
             tokens=[]
